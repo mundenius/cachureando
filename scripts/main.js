@@ -27,5 +27,12 @@ function muestraReloj() {
     window.onload = function() {
     setInterval(muestraReloj, 1000);
   }
+  
+const selectElement = document.querySelector('.calificacion');
 
- 
+selectElement.addEventListener('change', (event) => {
+    const resultado = document.querySelector('.resultado');
+
+    resultado.textContent = `Su calificacion es ${event.target.value}`;
+    console.log(event.target.value);
+});
