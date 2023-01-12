@@ -17,3 +17,9 @@ function muestraReloj() {
     window.onload = function() {
     setInterval(muestraReloj, 1000);
   }
+  $(document).ready(function(){
+    if($("#gift").is(':checked'))
+        $("#inputGift").hide();  // checked
+    else
+        $("#test").show();
+    });
