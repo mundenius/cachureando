@@ -17,9 +17,11 @@ function muestraReloj() {
     window.onload = function() {
     setInterval(muestraReloj, 1000);
   }
-  $(document).ready(function(){
-    if($("#gift").is(':checked'))
-        $("#inputGift").hide();  // checked
-    else
-        $("#test").show();
-    });
+const selectElement = document.querySelector('.calificacion');
+
+selectElement.addEventListener('change', (event) => {
+    const resultado = document.querySelector('.resultado');
+
+    resultado.textContent = `Su calificacion es ${event.target.value}`;
+    console.log(event.target.value);
+});
