@@ -17,3 +17,4 @@ function muestraReloj() {
     window.onload = function() {
     setInterval(muestraReloj, 1000);
   }
+ 
