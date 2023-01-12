@@ -17,8 +17,6 @@ function muestraReloj() {
     window.onload = function() {
     setInterval(muestraReloj, 1000);
   }
-
-
 const selectElement = document.querySelector('.calificacion');
 
 selectElement.addEventListener('change', (event) => {
