@@ -1,0 +1,93 @@
+header {
+    background-color: rgb(246,246,246);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-style: oblique;
+    text-align: center;
+    padding: 1px;
+
+}
+
+body{
+   background-color: rgb(246,246,246);
+}
+main{
+    max-width:fit-content;
+    height: auto;
+    justify-content: center;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+
+}
+
+.container-galeria {
+    justify-content: center;
+    display: grid;
+    gap: 15px;
+    
+}
+
+@media screen and (max-width: 576px){
+    
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.container-informacion {
+   display: grid;
+   grid-template-columns: 3fr 2fr;
+   gap: 10px;
+}
+.quienessomos {
+    max-width: 500px;
+    height: auto;
+    font-size: 1.5vw;
+    font-family: Verdana;
+    gap: 15px;
+}
+#nuestraempresa{
+    text-align: center ;
+    text-justify:distribute-all-lines;
+    font-size: 1.5vw ;
+}
+@media screen and (max-width: 576px ) {
+.quienessomos {
+    font-size: 4vw;
+}   
+}
+@media screen and (max-width: 768px ) {
+    .quienessomos {
+        max-width: 600px;
+        height: auto;
+    }   
+    }
+a {
+    color: rgb(210, 210, 210);
+    text-shadow:grey 0.01em 0.01em 0.2em ;
+    max-width: fit-content;
+    height: auto;
+}
+.tituloprincipal {
+    color: rgb(40, 40, 40, 0.7);
+    text-shadow: rgb(255, 255, 254) 0.01em 0.01em 0.2em;
+    font-size: 5vw; font-family: 'Courier New', Courier, monospace;
+}
+@media screen and (max-width: 768px){
+    .h1 { font-size: 3vw }
+}
+h2 {
+    font-size: 1.5vw;
+    font-family: Verdana; font-weight: bold;
+}
+
+footer{
+    font-family: Verdana; font-size: 12px;
+    text-align: center;
+}
+.NombreFormularios {
+    font-family: Verdana; font-weight: bold;
+}
