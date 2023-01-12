@@ -106,3 +106,12 @@ footer {
     font-family: Verdana;
     font-weight: bold;
 }
+.card-text {
+    display: flex;
+    justify-content:center;
+    font-size: larger;
+    font-weight: bold;
+}
+.blockquote { 
+    margin-bottom: 0px;
+}
