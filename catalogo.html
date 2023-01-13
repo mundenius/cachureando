@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Carrito</title>
   <link rel="stylesheet" href="Css/bootstrap.min.css">
+  
   <style>
   .badge-notify{
     background:#8d0382;
@@ -20,7 +21,7 @@
   </style>
 </head>
 <body>
-  <a class="w-60 btn btn-primary btn-md" href="index.html" type="submit">Volver</a>
+  <a class="w-50 btn btn-primary btn-md" href="index.html" type="submit">Volver</a>
     <body class="container">
 
         <div class="page-header">
@@ -39,7 +40,7 @@
             <br>
             Extractor de jugos - <strong>$40.000</strong>
             <br>
-            <button class="btn btn-danger my-cart-btn" data-id="1" data-name="product 1" data-summary="summary 1" data-price="40.000" data-quantity="1" data-image="images/img_1.png">Agregar al carro</button>
+            <button class="btn btn-danger my-cart-btn" data-id="1" data-name="product 1" data-summary="summary 1" data-price="40.000" data-quantity="1" data-image="img/img_1.png">Agregar al carro</button>
             <a href="#" class="btn btn-info">Detalles</a>
           </div>
       
@@ -48,7 +49,7 @@
             <br>
             Control Remoto - <strong>$5.000</strong>
             <br>
-            <button class="btn btn-danger my-cart-btn" data-id="2" data-name="product 2" data-summary="summary 2" data-price="5.000" data-quantity="1" data-image="images/img_2.png">Agregar al carro</button>
+            <button class="btn btn-danger my-cart-btn" data-id="2" data-name="product 2" data-summary="summary 2" data-price="5.000" data-quantity="1" data-image="img/img_2.png">Agregar al carro</button>
             <a href="#" class="btn btn-info">Detalles</a>
           </div>
       
@@ -57,7 +58,7 @@
             <br>
             Camara - <strong>$80.000</strong>
             <br>
-            <button class="btn btn-danger my-cart-btn" data-id="3" data-name="product 3" data-summary="summary 3" data-price="80.000" data-quantity="1" data-image="images/img_3.png">Agregar al carro</button>
+            <button class="btn btn-danger my-cart-btn" data-id="3" data-name="product 3" data-summary="summary 3" data-price="80.000" data-quantity="1" data-image="img/img_3.png">Agregar al carro</button>
             <a href="#" class="btn btn-info">Detalles</a>
           </div>
       
@@ -66,7 +67,7 @@
             <br>
             Plancha - <strong>$20.000</strong>
             <br>
-            <button class="btn btn-danger my-cart-btn" data-id="4" data-name="product 4" data-summary="summary 4" data-price="20.000" data-quantity="1" data-image="images/img_4.png">Agregar al carro</button>
+            <button class="btn btn-danger my-cart-btn" data-id="4" data-name="product 4" data-summary="summary 4" data-price="20.000" data-quantity="1" data-image="img/img_4.png">Agregar al carro</button>
             <a href="#" class="btn btn-info">Detalles</a>
           </div>
       
@@ -75,10 +76,37 @@
             <br>
             Combo Aspiradora y Lavadora - <strong>$149.990</strong>
             <br>
-            <button class="btn btn-danger my-cart-btn" data-id="5" data-name="product 5" data-summary="summary 5" data-price="149.990" data-quantity="1" data-image="images/img_5.png">Agregar al carro</button>
+            <button class="btn btn-danger my-cart-btn" data-id="5" data-name="Combo" data-summary="summary 5" data-price="149.990" data-quantity="1" data-image="img/img_5.png">Agregar al carro</button>
             <a href="#" class="btn btn-info">Detalles</a>
           </div>
-      
+          
+          <div class="col-md-3 text-center">
+            <img src="img/img6.jpg" width="150px" height="150px">
+            <br>
+            Corazon - <strong>$149.990.990</strong>
+            <br>
+            <button class="btn btn-danger my-cart-btn" data-id="6" data-name="Corazon" data-summary="summary 6" data-price="1.000" data-quantity="1" data-image="img/img6.jpg">Agregar al carro</button>
+            <a href="#" class="btn btn-info">Detalles</a>
+          </div>
+          
+          <div class="col-md-3 text-center">
+            <img src="img/img7.jpeg" width="150px" height="150px">
+            <br>
+            Cigarros genericos - <strong>$5.000</strong>
+            <br>
+            <button class="btn btn-danger my-cart-btn" data-id="7" data-name="Cigarros" data-summary="summary 7" data-price="5.000" data-quantity="1" data-image="img/img7.jpeg">Agregar al carro</button>
+            <a href="#" class="btn btn-info">Detalles</a>
+          </div>
+
+          <div class="col-md-3 text-center">
+            <img src="img/img8.png" width="180px" height="150px">
+            <br>
+            VCR - <strong>$15.000</strong>
+            <br>
+            <button class="btn btn-danger my-cart-btn" data-id="8" data-name="VCR" data-summary="summary 8" data-price="15.000" data-quantity="1" data-image="img/img8.png">Agregar al carro</button>
+            <a href="#" class="btn btn-info">Detalles</a>
+          </div>
+
         </div>
         
       
@@ -143,7 +171,7 @@
       
           $("#addNewProduct").click(function(event) {
             var currentElementNo = $(".row").children().length + 1;
-            $(".row").append('<div class="col-md-3 text-center"><img src="images/img_empty.png" width="150px" height="150px"><br>product ' + currentElementNo + ' - <strong>$' + currentElementNo + '</strong><br><button class="btn btn-danger my-cart-btn" data-id="' + currentElementNo + '" data-name="product ' + currentElementNo + '" data-summary="summary ' + currentElementNo + '" data-price="' + currentElementNo + '" data-quantity="1" data-image="images/img_empty.png">Agregar al carro</button><a href="#" class="btn btn-info">Details</a></div>')
+            $(".row").append('<div class="col-md-3 text-center"><img src="img/img_empty.png" width="150px" height="150px"><br>product ' + currentElementNo + ' - <strong>$' + currentElementNo + '</strong><br><button class="btn btn-danger my-cart-btn" data-id="' + currentElementNo + '" data-name="product ' + currentElementNo + '" data-summary="summary ' + currentElementNo + '" data-price="' + currentElementNo + '" data-quantity="1" data-image="img/img_empty.png">Agregar al carro</button><a href="#" class="btn btn-info">Details</a></div>')
           });
         });
         </script>
