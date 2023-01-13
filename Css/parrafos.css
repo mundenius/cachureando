@@ -1,13 +1,8 @@
-header {
-}
-
 .container-galeria {
     justify-content: center;
     display: grid;
     gap: 15px;
 }
-
-@media screen and (max-width: 576px) {}
 
 .img-fluid {
     max-width: 100%;
@@ -42,7 +37,7 @@ a {
 .tituloprincipal {
     color: rgb(40, 40, 40, 0.7);
     font-size: 10vw; font-family: 'Courier New', Courier, monospace;
-    text-align: center center;
+    text-align: center;
 }
 
 h2 {
@@ -89,15 +84,39 @@ footer {
     .container-informacion {
         flex-wrap: wrap;
     }
+    .ajustesreloj {
+        max-width: 1fr;
+    }
 }
 @media screen and (min-width: 769px ) {
     #nuestraempresa {
        font-size: 3vw;
     }   
+    .ajustesreloj {
+        max-width: 30%;
+    }
     }
 
 @media screen and (min-width: 1024px){
     #nuestraempresa {
         font-size: 1.5vw;
     }
+    .container-menu-hora {
+        display: grid;
+        grid-template-areas: top bottom;
+        grid-template-rows: 1fr 1fr;
+
+    }
+    .grid-top {
+        max-width: 100%;
+        display: grid;
+        grid-template-areas: left center right ;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .grid-right {
+        display: grid;
+        justify-content:right;
+        margin-right: 10px;
+    }
+
 }

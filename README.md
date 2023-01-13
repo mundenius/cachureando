@@ -55,3 +55,17 @@ Primer Formulario de CONTACTO.html
 <a class="btn btn-primary btn-lg" href="index.html">Volver</a>
 </form> -->
 <!-- </fieldset>    -->
+
+RELOJ codigo comentado
+<!-- <div class="card" style="width: 18rem;">
+    <div class="card-body" style="background-color: rgb(167, 167, 167);">
+            <p class="card-text" id="reloj"></p>
+    </div>
+    <div class="card text-bg-secondary text-center p-3">
+      <figure class="mb-0">
+        <blockquote class="blockquote">
+          <p id="reloj"></p>
+        </blockquote>
+      </figure>
+    </div> -->
+<!-- <div id="reloj"></div> -->

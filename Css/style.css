@@ -19,3 +19,9 @@ body {
 .form-control-large {
   width: 310px;
 }
+
+.grid-right {
+  display: grid;
+  justify-content:right;
+  margin-right: 10px;
+}
