@@ -1,4 +1,4 @@
-
+// funcion reloj
 function muestraReloj() {
    
     var fechaHora = new Date();
@@ -27,7 +27,8 @@ function muestraReloj() {
     window.onload = function() {
     setInterval(muestraReloj, 1000);
   }
-  
+
+// funcion calificador
 const selectElement = document.querySelector('.calificacion');
 
 selectElement.addEventListener('change', (event) => {
