@@ -1,0 +1,86 @@
+.container-galeria {
+    justify-content: center;
+    display: grid;
+    gap: 15px;
+}
+
+#informacion {
+    background-color: rgba(192, 192, 192, 0.336);
+    padding-top: 30px;
+}
+
+#nuestraempresa{
+    text-align: center ;
+    text-justify:distribute-all-lines;
+}
+
+a {
+    color: rgb(210, 210, 210);
+    text-shadow: grey 0.01em 0.01em 0.2em;
+    max-width: fit-content;
+    height: auto;
+}
+
+.tituloprincipal {
+    color: rgb(40, 40, 40, 0.7);
+    font-size: 10vw; font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+h2 {
+    font-family: Verdana;
+    font-weight: bold;
+    
+}
+
+footer {
+    font-family: Verdana;
+    font-size: 12px;
+    text-align: center;
+}
+
+.NombreFormularios {
+    font-family: Verdana;
+    font-weight: bold;
+}
+.card-text {
+    display: flex;
+    justify-content:center;
+    font-size: larger;
+    font-weight: bold;
+}
+.blockquote { 
+    margin-bottom: 0px;
+}
+
+/* RESPONSIVIDAD */
+
+@media screen and (max-width: 768px ) {
+    .ajustesreloj {
+        max-width: 1fr;
+    }
+}
+@media screen and (min-width: 769px ) {
+    .ajustesreloj {
+        max-width: 30%;
+    }
+    }
+@media screen and (min-width: 1024px){
+    .container-menu-hora {
+        display: grid;
+        grid-template-areas: top bottom;
+        grid-template-rows: 1fr 1fr;
+
+    }
+    .grid-top {
+        max-width: 100%;
+        display: grid;
+        grid-template-areas: left center right ;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .grid-right {
+        display: grid;
+        justify-content:right;
+        margin-right: 10px;
+    }
+}
