@@ -1,3 +1,4 @@
+// funcion del reloj
 function muestraReloj() {
    
     var fechaHora = new Date();
@@ -27,6 +28,7 @@ function muestraReloj() {
     setInterval(muestraReloj, 1000);
   }
   
+// funcion del boton editar
 const paragraph = document.getElementById("edit");
 const edit_button = document.getElementById("edit-button");
 const end_button = document.getElementById("end-editing");
