@@ -4,23 +4,25 @@
     gap: 15px;
 }
 
-.img-fluid {
+/* .img-fluid {
     max-width: 100%;
     height: auto;
-}
+} */
 
-.container-informacion {
-    display: grid;
+#informacion {
+    /* display: grid;
     grid-area: 80%;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 3fr 2fr; */
+    background-color: rgba(192, 192, 192, 0.336);
+    padding-top: 30px;
 }
 
-.quienessomos {
+/* .quienessomos {
     max-width: 100%;
     height: auto;
     font-size: 1.5vw;
     font-family: Verdana;
-}
+} */
 
 #nuestraempresa{
     text-align: center ;
@@ -41,14 +43,15 @@ a {
 }
 
 h2 {
-    font-size: 1.5vw;
+    /* font-size: 1.5vw; */
     font-family: Verdana;
     font-weight: bold;
+    
 }
-h5{
+/* h5{
     font-size: 1.5vw;
     font-family: Verdana; font-weight: bold;
-}
+} */
 
 footer {
     font-family: Verdana;
@@ -73,7 +76,7 @@ footer {
 /* RESPONSIVIDAD */
 
 @media screen and (max-width: 768px ) {
-    .quienessomos {
+    /* .quienessomos {
         max-width: 100%;
         height: auto;
         
@@ -81,26 +84,33 @@ footer {
     #nuestraempresa {
         font-size: 4vw;
     }
-    .container-informacion {
+    #informacion {
         flex-wrap: wrap;
-    }
+    } */
     .ajustesreloj {
         max-width: 1fr;
     }
 }
 @media screen and (min-width: 769px ) {
-    #nuestraempresa {
+    /* #nuestraempresa {
        font-size: 3vw;
-    }   
+    }    */
     .ajustesreloj {
         max-width: 30%;
     }
     }
+/* @media screen and (min-width: 992px ){
+    #informacion { max-width: auto;
+    }
+
+} */
+    
+
 
 @media screen and (min-width: 1024px){
-    #nuestraempresa {
+    /* #nuestraempresa {
         font-size: 1.5vw;
-    }
+    } */
     .container-menu-hora {
         display: grid;
         grid-template-areas: top bottom;
