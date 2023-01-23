@@ -1,4 +1,3 @@
-
 function muestraReloj() {
    
     var fechaHora = new Date();
@@ -28,11 +27,18 @@ function muestraReloj() {
     setInterval(muestraReloj, 1000);
   }
   
-const selectElement = document.querySelector('.calificacion');
+const paragraph = document.getElementById("edit");
+const edit_button = document.getElementById("edit-button");
+const end_button = document.getElementById("end-editing");
 
-selectElement.addEventListener('change', (event) => {
-const resultado = document.querySelector('.resultado');
+edit_button.addEventListener("click", function() {
+  paragraph.contentEditable = true;
+  paragraph.style.backgroundColor = "rgb(153, 153, 153, 0.5)";
+  paragraph.style.fontStyle = "normal";
+} );
 
-resultado.textContent = `Su calificacion es ${event.target.value}`;
-console.log(event.target.value);
-});
+end_button.addEventListener("click", function() {
+  paragraph.contentEditable = false;
+  paragraph.style.backgroundColor = "#FFFFFF";
+  paragraph.style.fontStyle = "oblique";
+} )
