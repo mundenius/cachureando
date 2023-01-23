@@ -4,22 +4,9 @@
     gap: 15px;
 }
 
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
-
-.container-informacion {
-    display: grid;
-    grid-area: 80%;
-    grid-template-columns: 3fr 2fr;
-}
-
-.quienessomos {
-    max-width: 100%;
-    height: auto;
-    font-size: 1.5vw;
-    font-family: Verdana;
+#informacion {
+    background-color: rgba(192, 192, 192, 0.336);
+    padding-top: 30px;
 }
 
 #nuestraempresa{
@@ -41,13 +28,9 @@ a {
 }
 
 h2 {
-    font-size: 1.5vw;
     font-family: Verdana;
     font-weight: bold;
-}
-h5{
-    font-size: 1.5vw;
-    font-family: Verdana; font-weight: bold;
+    
 }
 
 footer {
@@ -73,34 +56,16 @@ footer {
 /* RESPONSIVIDAD */
 
 @media screen and (max-width: 768px ) {
-    .quienessomos {
-        max-width: 100%;
-        height: auto;
-        
-}   
-    #nuestraempresa {
-        font-size: 4vw;
-    }
-    .container-informacion {
-        flex-wrap: wrap;
-    }
     .ajustesreloj {
         max-width: 1fr;
     }
 }
 @media screen and (min-width: 769px ) {
-    #nuestraempresa {
-       font-size: 3vw;
-    }   
     .ajustesreloj {
         max-width: 30%;
     }
     }
-
 @media screen and (min-width: 1024px){
-    #nuestraempresa {
-        font-size: 1.5vw;
-    }
     .container-menu-hora {
         display: grid;
         grid-template-areas: top bottom;
@@ -118,5 +83,4 @@ footer {
         justify-content:right;
         margin-right: 10px;
     }
-
 }
