@@ -5,7 +5,7 @@ function muestraReloj() {
     var horas = fechaHora.getHours();
     var minutos = fechaHora.getMinutes();
     var segundos = fechaHora.getSeconds();
-    var day = (fechaHora.getDay());
+    var day = (fechaHora.getDate());
     if (day <= 9) {
       day = '0' + day
     } 
@@ -31,8 +31,8 @@ function muestraReloj() {
 const selectElement = document.querySelector('.calificacion');
 
 selectElement.addEventListener('change', (event) => {
-    const resultado = document.querySelector('.resultado');
+const resultado = document.querySelector('.resultado');
 
-    resultado.textContent = `Su calificacion es ${event.target.value}`;
-    console.log(event.target.value);
+resultado.textContent = `Su calificacion es ${event.target.value}`;
+console.log(event.target.value);
 });
