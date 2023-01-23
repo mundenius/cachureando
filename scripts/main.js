@@ -5,7 +5,7 @@ function muestraReloj() {
     var horas = fechaHora.getHours();
     var minutos = fechaHora.getMinutes();
     var segundos = fechaHora.getSeconds();
-    var day = fechaHora.getDay();
+    var day = (fechaHora.getDay());
     if (day <= 9) {
       day = '0' + day
     } 
@@ -13,7 +13,7 @@ function muestraReloj() {
     if (month <= 9) {
       month = '0' + month
     } 
-    var year = fechaHora.getFullYear();
+    var year = (fechaHora.getFullYear());
     var fecha = day +'/'+ month +'/'+ year;
 
     if(horas < 10) { horas = '0' + horas; }
