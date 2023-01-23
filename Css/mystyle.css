@@ -4,30 +4,34 @@
     gap: 15px;
 }
 
-.img-fluid {
-    max-width: 100%;
-    height: auto;
+#container-informacion {
+    background-color: rgba(220, 235, 245, 0.781);
 }
 
-.container-informacion {
+/* .img-fluid {
+    max-width: 100%;
+    height: auto;
+} */
+
+/* .container-informacion {
     display: grid;
     grid-area: 80%;
     grid-template-columns: 3fr 2fr;
-}
+} */
 
-.quienessomos {
+/* .quienessomos {
     max-width: 100%;
     height: auto;
     font-size: 1.5vw;
     font-family: Verdana;
-}
+} */
 
-#nuestraempresa{
+/* #nuestraempresa{
     text-align: center ;
     text-justify:distribute-all-lines;
-}
+} */
 
-a {
+a{
     color: rgb(210, 210, 210);
     text-shadow: grey 0.01em 0.01em 0.2em;
     max-width: fit-content;
@@ -40,11 +44,18 @@ a {
     text-align: center;
 }
 
-h2 {
+/* h2 {
     font-size: 1.5vw;
     font-family: Verdana;
     font-weight: bold;
-}
+} */
+
+/* .tituloquienessomos {
+    font-size: 1.5vw;
+    font-family: Verdana;
+    font-weight: bold;
+} */
+
 h5{
     font-size: 1.5vw;
     font-family: Verdana; font-weight: bold;
@@ -69,38 +80,46 @@ footer {
 .blockquote { 
     margin-bottom: 0px;
 }
+.quienessomos {
+   padding-left: 50px;
+}
 
 /* RESPONSIVIDAD */
 
+/* @media screen and (max-width: 992px){
+
+
+} */
+
 @media screen and (max-width: 768px ) {
-    .quienessomos {
+    /* .quienessomos {
         max-width: 100%;
         height: auto;
         
-}   
-    #nuestraempresa {
+}    */
+    /* #nuestraempresa {
         font-size: 4vw;
-    }
-    .container-informacion {
+    } */
+    /* .container-informacion {
         flex-wrap: wrap;
-    }
+    } */
     .ajustesreloj {
         max-width: 1fr;
     }
 }
 @media screen and (min-width: 769px ) {
-    #nuestraempresa {
+    /* #nuestraempresa {
        font-size: 3vw;
-    }   
+    }    */
     .ajustesreloj {
         max-width: 30%;
     }
     }
 
 @media screen and (min-width: 1024px){
-    #nuestraempresa {
+    /* #nuestraempresa {
         font-size: 1.5vw;
-    }
+    } */
     .container-menu-hora {
         display: grid;
         grid-template-areas: top bottom;
