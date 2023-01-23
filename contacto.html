@@ -25,33 +25,33 @@
                 <h4 class="mb-3">Formulario de contacto</h4>
                 <form class="needs-validation" novalidate="">
                     <div class="col-8">
-                      <label for="username" class="form-label">Nombre</label>
+                      <label for="username" class="form-label" id="labelusuario">Nombre</label>
                       <div class="input-group has-validation">
-                        <input type="text" class="form-control" id="username" placeholder="Nombre" required="">
+                        <input type="text" class="form-control" id="username" placeholder="Nombre">
                          <div class="invalid-feedback">
                          </div>
                       </div>
                       </div>        
                     <div class="col-8">
-                      <label for="email" class="form-label">Email </label>
+                      <label for="email" class="form-label" id="labelemail">Email </label>
                       <input type="email" class="form-control" id="email" placeholder="Email">
                       <div class="invalid-feedback">
                       </div>
                     </div>
 
                     <div class="col-8">
-                      <label for="Telefono" class="form-label">Telefono</label>
-                      <input type="text" class="form-control" id="Telefono" placeholder="+56" required="">
+                      <label for="Telefono" class="form-label" id="labeltelefono">Telefono</label>
+                      <input type="text" class="form-control" id="telefono" placeholder="+56" required="">
                       <div class="invalid-feedback">
                       </div>
                       </div>
 
                       <div class="mb-3">
-                        <label for="Textarea1" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="Textarea1" placeholder="Escribe tu mensaje aqui" rows="3"></textarea>
+                        <label for="Textarea1" class="form-label" id="labelmensaje">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" placeholder="Escribe tu mensaje aqui" rows="3"></textarea>
                       </div>
                     
-                    <a class="w-50 btn btn-primary btn-md" href="mensaje.html" type="submit">Enviar</a>
+                    <a class="w-50 btn btn-primary btn-md" type="submit" onclick=validateForm()>Enviar</a>
                     <br></br>
                     <a class="w-50 btn btn-primary btn-md" href="index.html" type="submit">Volver</a>
 
