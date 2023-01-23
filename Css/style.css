@@ -25,3 +25,8 @@ body {
   justify-content:right;
   margin-right: 10px;
 }
+
+.primeraDireccion {
+  display: flex;
+  gap: 10px;
+}
